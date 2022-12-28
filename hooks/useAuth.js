@@ -19,7 +19,7 @@ export function AuthProvider({ children }) {
   }, []);
 
   function signup(username, password) {
-    fetch("https://plankton-app-l385o.ondigitalocean.app/signup", {
+    fetch("https://plankton-app-l385o.ondigitalocean.app/user/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
