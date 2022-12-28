@@ -3,7 +3,7 @@ import { useAuth } from "../hooks/useAuth";
 import AvatarComponent from "./Avatar";
 import io from "socket.io-client";
 
-const socket = io("http://localhost:5000", {
+const socket = io("https://plankton-app-l385o.ondigitalocean.app", {
   transports: ["websocket"],
 });
 export default function AvatarLocation({ setDirections }) {

@@ -19,7 +19,7 @@ export function AuthProvider({ children }) {
   }, []);
 
   function signup(username, password) {
-    fetch("http://localhost:5000/user/signup", {
+    fetch("https://plankton-app-l385o.ondigitalocean.app/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -42,7 +42,7 @@ export function AuthProvider({ children }) {
   }
 
   async function login(username, password) {
-    await fetch("http://localhost:5000/user/login", {
+    await fetch("https://plankton-app-l385o.ondigitalocean.app/user/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

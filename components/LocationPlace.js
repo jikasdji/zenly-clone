@@ -82,7 +82,7 @@ export default function LocationPlace({ setDirections }) {
   const [listPlace, setListPlace] = React.useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/place")
+    fetch("https://plankton-app-l385o.ondigitalocean.app/place")
       .then((res) => res.json())
       .then((data) => {
         setListPlace(data);
